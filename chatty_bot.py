@@ -3,6 +3,7 @@ This program is a simple chatty bot which help you study programming.
 First stage: a bot the display a greeting, its name and the date of its creation
 Second stage: Implement input from the user, a small dialogue with greetings
 Third stage: adding a guessing game that will predict the user age.
+Fourth stage: Learning the bot to count from 0 to any positive number the user enter.
 '''
 '''
 First stage: 
@@ -18,11 +19,11 @@ bot_age = 2020
 
 print(f"Hello! My name is {bot_name}.")
 print(f"I was created in {bot_age}.")
-
 print("Please, remind your name.")
-user_name = input()
-print(f"What a great name you have, {user_name}!")
 
+user_name = input()
+
+print(f"What a great name you have, {user_name}!")
 # Third stage
 print("Let me quess your age.")
 print("Enter remainders of dividing your age by 3, 5 and 7.")
@@ -38,3 +39,12 @@ remainder7 = num3 % 7
 quessing_age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
 
 print(f"Your age is {quessing_age}; that's a good time to start programming")
+#Fourth stage
+print("Now I will prove to you that I can count to any number you want.")
+
+user_number = int(input())
+
+for count in range(user_number + 1):
+    print(f"{count} !")
+
+print("Completed, have a nice day!")
